@@ -1,0 +1,7 @@
+<!DOCTYPE html>
+{% extends 'app_one/base.html' %}
+    {% block body_block %}
+        <h1 class="display-4">Index :: Application One</h1>
+        <p class="lead">{{ text|cut:'hello'}}</p>
+        <p class="lead">{{ number|add:'99' }}</p>
+    {% endblock %}

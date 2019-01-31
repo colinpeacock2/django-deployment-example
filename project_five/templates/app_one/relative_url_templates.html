@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Other :: Relative URLS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+<body>
+    <div class="jumbotron">
+        <h1 class="display-4">Relative URL :: Application One</h1>
+        <p class="lead">{{ insert_me }}</p>
+        <a href="{% url 'app_one:other' %}">The Other Page</a>
+        <a href="{% url 'app_one:index' %}">The Index Page</a>
+        <a href="{% url 'admin:index' %}">The Admin Page</a>
+        <a href="{% url 'index' %}">Index Page</a>
+        <hr class="my-4">
+    </div>   
+</body>
+</html>
